@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_field"
+        android:title="@string/search"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:icon="@android:drawable/ic_menu_search"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+    <item
+        android:title="@string/sort"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:id="@+id/action_sort">
+        <menu>
+            <item
+                android:title="@string/popular"
+                android:orderInCategory="1"
+                app:showAsAction="ifRoom"
+                android:id="@+id/action_popular"/>
+            <item
+                android:title="@string/top_rated"
+                android:orderInCategory="2"
+                app:showAsAction="ifRoom"
+                android:id="@+id/action_top_rated"/>
+            <item
+                android:title="@string/my_favorite_movies"
+                android:orderInCategory="3"
+                app:showAsAction="ifRoom"
+                android:id="@+id/action_my_favorite_movies"/>
+        </menu>
+    </item>
+    <item
+        android:title="@string/settings"
+        android:orderInCategory="3"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:id="@+id/settings_menu">
+    </item>
+</menu>
